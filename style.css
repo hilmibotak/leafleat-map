@@ -1,0 +1,7 @@
+/* Pastikan peta memenuhi seluruh layar */
+#map {
+  height: 100vh; /* 100% dari tinggi viewport */
+  width: 100%;   /* Penuh selebar layar */
+  margin: 0;     /* Hilangkan margin default */
+  padding: 0;
+}

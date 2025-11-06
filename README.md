@@ -1,1 +1,1 @@
-# leafleat-map
+# leaflet-tutor
