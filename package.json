@@ -1,0 +1,25 @@
+{
+  "name": "ctf-cyber-map",
+  "version": "1.0.0",
+  "description": "CTF GIS - Cyber Map Geographic Information System",
+  "type": "module",
+  "scripts": {
+    "start": "start.bat",
+    "stop": "stop.bat",
+    "backend": "cd backend && go run main.go",
+    "frontend": "python -m http.server 8000",
+    "dev": "npm run backend & npm run frontend"
+  },
+  "keywords": [
+    "ctf",
+    "gis",
+    "cyber-map",
+    "leaflet",
+    "vanilla-js",
+    "es6-modules"
+  ],
+  "author": "CTF Team",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

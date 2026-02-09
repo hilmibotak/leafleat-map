@@ -1,0 +1,39 @@
+# PingBox Configuration
+# Frontend server untuk CTF Cyber Map
+
+# Server settings
+port = 8000
+host = "0.0.0.0"
+
+# Directory to serve
+root = "."
+
+# CORS settings
+cors_enabled = true
+cors_origins = ["*"]
+
+# Logging
+log_level = "info"
+log_file = "pingbox.log"
+
+# Cache settings
+cache_enabled = true
+cache_max_age = 3600
+
+# Compression
+gzip_enabled = true
+
+# Custom headers
+[headers]
+"X-Powered-By" = "PingBox"
+"X-CTF-App" = "Cyber Map"
+
+# Routes
+[routes]
+"/" = "index.html"
+"/api/*" = "proxy:http://localhost:8080"
+
+# SSL/TLS (optional)
+# ssl_enabled = false
+# ssl_cert = "cert.pem"
+# ssl_key = "key.pem"
